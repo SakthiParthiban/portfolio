@@ -8,6 +8,10 @@
     --text-main: #1b1b1b;
     --text-muted: #323323;
 }
+body {
+  font-family: 'Inter', system-ui, Arial, sans-serif;
+  margin: 0;
+}
 .navbar{
     background: var(--black);
     position: sticky;
@@ -36,4 +40,69 @@
     color: #fff;
     padding: 8px 14px;
     border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero{
+    padding: 60px 0 100px;
+    background: linear-gradient(
+    180deg,
+    #FFF6EC 0%,     
+    #FFE7D0 100%    
+  );  
+}
+.hero-inner{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.hero-text h1{
+    font-size: 42px;
+    margin: 0 0 10px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+.hero-text h2{
+    font-size: 20px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+.hero-text p{
+    max-width: 480px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #323232;
+}
+.hero-actions{
+    display:flex;
+    gap: 12px;
+}
+.btn-secondary{
+    border: 1px solid var(--grey);
+    color: var(--text-main);
+    padding: 8px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.hero-image .image-box {
+  width: 280px;
+  height: 320px;
+  background: #323232;
+  border-radius: 16px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(252, 110, 32, 0.35);
+  transition: 0.2s ease;
+}
+.btn-secondary:hover {
+  background: #1B1B1B;
+  color: #fff;
+  transition: 0.2s ease;
 }
